@@ -1,0 +1,18 @@
+# Template information section
+name: "swift_mvpse_template"
+summary: "Module for creating swift MVPSE modules"
+author: "Nick Sadchikov"
+version: "0.0.1"
+license: "MIT"
+
+# The declarations for code files
+
+code_files:
+# Coordinator layer
+- {name: Coordinator.swift, path: Code/Coordinator/coordinator.swift.liquid}
+
+# Presenter layer
+- {name: Presenter.swift, path: Code/Presenter/presenter.swift.liquid}
+
+# View layer
+- {name: ViewController.swift, path: Code/View/view_controller.swift.liquid}
