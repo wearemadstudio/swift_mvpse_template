@@ -1,7 +1,7 @@
-Import SnapKit
+import SnapKit
 import UIKit
 
-final class {{ module_info.name }}ViewController: BaseViewController<{{ module_info.name }}State, {{ module_info.name }}Event, {{ module_info.name }}ViewPresenter> {
+final class {{ module_info.name }}ViewController: AGBaseViewController<{{ module_info.name }}State, {{ module_info.name }}Event, {{ module_info.name }}ViewPresenter> {
     
     // MARK: Constants
 
@@ -20,7 +20,7 @@ final class {{ module_info.name }}ViewController: BaseViewController<{{ module_i
     // MARK: - Setup
     
     override func setupUI() {
-	setupLayout()
+        setupLayout()
     }
 
     private func setupLayout() {
