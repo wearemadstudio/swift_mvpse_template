@@ -2,14 +2,17 @@
 name: "swift_mvpse_template"
 summary: "Module for creating swift MVPSE modules"
 author: "Nick Sadchikov"
-version: "0.0.1"
+version: "1.0"
 license: "MIT"
 
 # The declarations for code files
 
 code_files:
-# Coordinator layer
-- {name: Coordinator.swift, path: Code/Coordinator/coordinator.swift.liquid}
+# Factory layer
+- {name: Factory.swift, path: Code/Factory/factory.swift.liquid}
+
+# Router layer
+- {name: Router.swift, path: Code/Router/router.swift.liquid}
 
 # Presenter layer
 - {name: Presenter.swift, path: Code/Presenter/presenter.swift.liquid}

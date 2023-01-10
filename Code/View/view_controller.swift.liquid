@@ -1,22 +1,15 @@
-//
-//  {{ module_info.file_name }}
-//  {{ module_info.project_name }}
-//
-//  Created by {{ developer.name }} on {{ date }}.
-//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
-//
-
+Import SnapKit
 import UIKit
 
 final class {{ module_info.name }}ViewController: BaseViewController<{{ module_info.name }}State, {{ module_info.name }}Event, {{ module_info.name }}ViewPresenter> {
     
     // MARK: Constants
 
-    // MARK: IBOutlets
+    // MARK: Views
 
     // MARK: Properties
 
-    var coordinator: {{ module_info.name }}Coordinator!
+    var router: {{ module_info.name }}Router!
 
     // MARK: LifeCycle
 
@@ -27,6 +20,10 @@ final class {{ module_info.name }}ViewController: BaseViewController<{{ module_i
     // MARK: - Setup
     
     override func setupUI() {
+	setupLayout()
+    }
+
+    private func setupLayout() {
 
     }
 

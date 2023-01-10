@@ -1,0 +1,14 @@
+import UIKit
+
+final class {{ module_info.name }}ViewFactory {
+
+    func setup() -> UIViewController {
+        let vc = {{ module_info.name }}ViewController()
+        let router = {{ module_info.name }}Router(view: vc)
+        let presenter = {{ module_info.name }}ViewPresenter()
+        vc.router = router
+        vc.presenter = presenter
+        return vc
+    }
+}
+
